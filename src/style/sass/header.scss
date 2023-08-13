@@ -1,0 +1,80 @@
+
+header {
+
+    height: 42em;
+    background-image: url("../assets/images/header-back.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1024px) {
+
+        background-image: url("../assets/images/tablet-header.webp");
+        height: 30em;
+    }
+
+    @media (max-width: 640px) {
+
+        height: 500px;
+        background-image: url("../assets/images/mobile-header.webp");
+    }
+
+    @media (min-width: 2000px) {
+
+        height: 50em;
+    }
+
+    @media (min-width: 2300px) {
+
+        height: 60em;
+    }
+
+    div {
+
+        div {
+
+            h1 {
+                font-family: $title-font;
+                font-size: 10em;
+
+                @media (max-width: 1024px) {
+
+                    font-size: 5.5em;
+                }
+
+            }
+    
+            h2 {
+                width: 80%;
+                font-family: $text-font;
+                font-size: 2.5em;
+                text-align: center;
+
+                @media (max-width: 1024px) {
+
+                    font-size: 1.6em;
+                }
+
+            }
+
+            @include contact-button(3.5em, 1.1em)
+        }
+        
+        img {
+
+            width: 29%;
+            height: auto;
+            transform: translate(-2em, -2em);
+            
+            @media (max-width: 1400px) {
+
+                width: 35%;
+                transform: translate(-2em, -1em);
+            }
+
+            @media (max-width: 640px) {
+
+                display: none;
+            }
+        }
+    }
+}

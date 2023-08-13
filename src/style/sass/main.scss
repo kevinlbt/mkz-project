@@ -1,0 +1,17 @@
+@import "variables.scss";
+@import "navbar.scss";
+@import "header.scss";
+@import "home.scss";
+@import "footer.scss";
+@import "apropos.scss";
+@import "contact.scss";
+@import "question1.scss";
+@import "question2.scss";
+@import "notfound.scss";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

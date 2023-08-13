@@ -1,0 +1,85 @@
+
+.apropos {
+
+    .pageaux {
+
+        background-color: $apropos-back;
+
+        h1 {
+
+            font-family: $title-font;
+            font-size: 5em;
+        }
+
+        div {
+
+
+            div {
+
+                h2 {
+                    font-family: $text-font;
+                    font-size: 1.5em;
+                }
+                p {
+                    font-family: $text-font;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    .banner_apropos {
+
+        height: 10vh;
+        background-image: url("../assets/images/back3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+
+        i {
+            font-size: 5em;
+            padding: 0.4em;
+            background-color: white;
+            border-radius: 50%;
+            transform: translateY(0.6em);
+        }
+    }
+
+    .apropos_pres {
+
+        p {
+            font-family: $text-font;
+            font-size: 1.3em;
+            font-weight: 100;
+
+            @media (max-width: 640px) {
+                
+                font-size: 1em;
+            }
+        }
+    }
+
+    .partenaire {
+
+        background-color: $apropos-back;
+
+        h2 {
+            font-family: $title-font;
+            font-size: 5em;
+
+            @media (max-width: 640px) {
+
+                font-size: 3.5em;
+            }
+        }
+
+        div {
+
+            img {
+
+                width: 25em;
+                padding: 3em;
+            }
+        }
+    }
+}

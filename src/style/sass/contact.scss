@@ -1,0 +1,97 @@
+.contact {
+
+    background-color: $apropos-back;  
+
+    section {
+
+        div {
+
+            position: relative;
+            h1 {
+
+                font-family: $title-font;
+                font-size: 5em;
+                text-align: center;
+
+                @media (min-width: 1024px) {
+
+                    text-align: left;
+                    margin-left: 3em;
+                }
+            }
+
+            .paper_plane {
+
+                width: 4em;
+                position: absolute;
+                top: 2em;
+                left: 9em;
+                transform: rotate(100deg);
+
+                @media (max-width: 640px) {
+
+                    left: 0.5em;
+                }
+
+                @media (max-width: 320px) {
+
+                    left: -0.5em;
+                }
+            }
+            .paper_plane_bis {
+
+                width: 5em;
+                position: absolute;
+                bottom: 2.5em;
+                left: 30vw;
+                transform: rotate(280deg);
+
+                @media (max-width: 640px) {
+
+                    width: 4em;
+                    left: 60vw;
+                }
+
+                @media (min-width: 640px) and (max-width: 1024px) {
+
+                    left: 55vw;
+                }
+
+                @media (min-width: 1024px) and (max-width: 1280px) {
+
+                    left: 35vw;
+                }
+
+
+            }
+            .form_contact {
+
+                input {
+
+                    background-color: transparent;
+                    width: 70%;
+                    border-bottom: solid 1px black;
+                    border-radius: 2px;
+                    padding: 0.5em;
+                    margin: 1em;
+                    outline: none;
+
+                }
+
+                textarea {
+
+                    width: 70%;
+                    background-color: transparent;
+                    border-bottom: solid 1px black;
+                    border-radius: 2px;
+                    padding: 5px;
+                    margin: 1em;
+                    outline: none;
+
+                }
+
+                @include contact-button(2em, 1.1em);
+            }
+        }
+    }
+}
